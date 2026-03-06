@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TravelBloom - Contact Us</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      color: #ffffff;
+      background-image: linear-gradient(rgba(0, 20, 40, 0.45), rgba(0, 20, 40, 0.45)),
+        url("https://images.unsplash.com/photo-1546436836-07a91091f160?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .top-nav {
+      height: 70px;
+      width: 100%;
+      background-color: rgba(7, 33, 53, 0.93);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 180px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .brand i {
+      font-size: 30px;
+    }
+
+    .brand span {
+      font-size: 35px;
+      font-style: italic;
+      font-weight: 500;
+      letter-spacing: 0.4px;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      gap: 28px;
+      margin: 0 20px;
+    }
+
+    .menu a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .menu a:hover {
+      color: #87defa;
+    }
+
+    .main-layout {
+      min-height: calc(100vh - 70px);
+      display: grid;
+      grid-template-columns: 64px 1fr;
+    }
+
+    .social-bar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      border-right: 1px solid rgba(255, 255, 255, 0.5);
+      margin: 28px 0;
+    }
+
+    .social-bar i {
+      color: #ffffff;
+      font-size: 20px;
+    }
+
+    .content {
+      padding: 26px 24px 40px;
+      max-width: 1100px;
+    }
+
+    h1 {
+      font-size: 62px;
+      line-height: 1.05;
+      margin-top: 36px;
+      margin-bottom: 24px;
+    }
+
+    .contact-wrap {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      align-items: center;
+      gap: 28px;
+      max-width: 1100px;
+    }
+
+    .contact-left p {
+      font-size: 30px;
+      margin-top: 12px;
+    }
+
+    .contact-form {
+      background: rgba(7, 33, 53, 0.45);
+      border: 1px solid rgba(255, 255, 255, 0.55);
+      padding: 22px;
+      border-radius: 4px;
+    }
+
+    .field {
+      margin-bottom: 14px;
+    }
+
+    .field label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    .field input,
+    .field textarea {
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      border-radius: 4px;
+      color: #ffffff;
+      background: transparent;
+      padding: 10px;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .field textarea {
+      min-height: 96px;
+      resize: vertical;
+    }
+
+    .btn {
+      border: none;
+      border-radius: 4px;
+      padding: 11px;
+      width: 100%;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      color: #ffffff;
+      background-color: #1492a0;
+    }
+
+    .btn:hover {
+      background-color: #0f7f8c;
+    }
+
+    @media (max-width: 1100px) {
+      .main-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .social-bar {
+        flex-direction: row;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        margin: 0 20px;
+        padding: 14px 0;
+      }
+
+      .contact-wrap {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="top-nav">
+    <a class="brand" href="travel_recommendation.html">
+      <i class="fa-solid fa-earth-americas"></i>
+      <span>TravelBloom</span>
+    </a>
+
+    <ul class="menu">
+      <li><a href="travel_recommendation.html">Home</a></li>
+      <li><a href="about_us.html">About Us</a></li>
+      <li><a href="contact_us.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="main-layout">
+    <aside class="social-bar">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-youtube"></i>
+    </aside>
+
+    <main class="content">
+      <div class="contact-wrap">
+        <div class="contact-left">
+          <h1>CONTACT US</h1>
+          <p>Get in touch</p>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Enter your name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Enter your email" required />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+          </div>
+          <button class="btn" type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    const contactForm = document.getElementById("contactForm");
+    contactForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      alert("Thank you! Your message has been submitted.");
+      contactForm.reset();
+    });
+  </script>
+</body>
+</html>
